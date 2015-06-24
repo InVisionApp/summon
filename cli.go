@@ -23,6 +23,7 @@ func RunCLI() error {
 	app.Writer = CLIWriter
 	app.Flags = command.Flags
 	app.Action = command.Action
+	app.Commands = []cli.Command{command.ProviderCommand}
 
 	return app.Run(CLIArgs)
 }
