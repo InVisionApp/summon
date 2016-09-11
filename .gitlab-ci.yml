@@ -1,0 +1,4 @@
+build_job:
+  stage: test
+  script:
+    - ./test.sh
